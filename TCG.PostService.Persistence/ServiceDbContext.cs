@@ -143,7 +143,6 @@ public class ServiceDbContext : DbContext
             .HasOne(lsp => lsp.SalePost)
             .WithMany(sp => sp.LikedSalePosts)
             .HasForeignKey(lsp => lsp.SalePostId);
-
         });
     }
 }
